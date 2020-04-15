@@ -4,7 +4,8 @@ import {
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import product from "../img/products/top.jpg";
-import Icon from '@material-ui/icons'
+
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 const ProductCard = (props) => {
   return (
@@ -13,10 +14,10 @@ const ProductCard = (props) => {
         <CardImg top width="100%" src={product} alt="Product Img" />
         <CardBody>
           <CardTitle> {this.props.product.name} </CardTitle>
-          <CardSubtitle>Price: $ {this.props.product.price} </CardSubtitle>
+          <CardSubtitle>Price: $ {this.props.product.price} <a href="mobos.com"><WhatsAppIcon /></a></CardSubtitle>
           <CardText> {this.props.product.description} </CardText>
           <Button>Add to Cart</Button> 
-          <Icon>WhatsApp</Icon>
+          
         </CardBody>
       </Card>
     </div>

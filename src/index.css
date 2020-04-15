@@ -6,7 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-  background-color: rgb(143, 136, 136);
+  background-color: #f8f9fa !important;
+  
 
   font-size: 75%;
   color: #000;
@@ -56,6 +57,7 @@ code {
     margin:0;
     
     font-weight:bold;
+    margin-top: 5px;
 }
 
 .searchBtn {
@@ -82,7 +84,8 @@ code {
 }
 
 .nav {
-  background-color: orangered !important;
+  /* background-color: orangered !important; */
+  
 }
 
 .featuredProduct {
@@ -90,6 +93,15 @@ code {
   padding-top: 10px;
   margin-top: 10px;
   border-radius: 1.5%;
+  background-color: white;
+  padding-top: 0%;
+  margin-top: 0em;
+}
+
+.tag {
+  
+  padding-bottom: 0;
+  margin-bottom: 0em;
 }
 
 .header {
@@ -103,12 +115,60 @@ code {
 .right {
   align-items: center !important;
   box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
-  margin-right: 10px;
+  margin-right: 50px;
   height: 450px;
   align-content: space-between;
   border-radius: 1.5%;
 }
 
-.tag {
-  position: absolute;
+
+
+.sideLink {
+  margin-left: 50px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 2px 1px -1px rgba(0,0,0,0.12);
+  background-color: white;
 }
+
+.sideLink .nav {
+  background-color: white;
+  
+}
+
+.categoryList {
+  height: 30px;
+  background-color: rgb(235, 235, 235);
+}
+
+.categoryList .listIcon {
+  margin-left: 5px;
+}
+
+.categoryList span {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.count {
+  position: relative;
+}
+
+.cartIcon {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  margin-left: 20px;
+}
+
+.cartSpace {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 15px;
+}
+
+#logo {
+  margin-top: 15px;
+  margin-left: 100px;
+}
+

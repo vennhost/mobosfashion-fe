@@ -9,6 +9,10 @@ import productImg from "../img/products/top.jpg"
 import SearchBar from "../components/searchBar";
 import Car from "../components/Carousel";
 import Right from "../components/RightBar";
+import LeftBar from "../components/SideBar";
+import logo from "../img/admin/logo.png";
+import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+import CartCount from '../components/CartBadge';
 
 class Home extends React.Component {
   state = {
@@ -54,10 +58,15 @@ class Home extends React.Component {
     return (
       <>
        
-         <SearchBar/>
+       <Row>
+        <Col xs="3"><img id="logo" src={logo} alt="Logo" width="150px" /></Col>
+        <Col xs="6"><SearchBar/></Col>
+        <Col xs="3"><p className="cartSpace"><span className="cartIcon"><AddShoppingCartIcon/></span><span className="cartCount"><CartCount/></span></p></Col>
+      </Row>
+         
        
         <Row className='header'>
-          <Col xs="3">.col-3</Col>
+          <Col xs="3"> <LeftBar/> </Col>
           <Col xs="6">
               <Slider/>
               <Car/>

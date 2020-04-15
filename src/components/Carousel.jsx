@@ -31,11 +31,11 @@ const Car = (props) => {
     <Tag className="tag"/>
     <Carousel className='featuredProduct' responsive={responsive}>
       
-      <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
-      <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
-      <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
-      <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
-      <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
+      <div className="featured">{<img className="featured" src={product} alt="Featured Products" width="50%" />}</div>
+      <div className="featured">{<img className="featured" src={product} alt="Featured Products" width="50%" />}</div>
+      <div className="featured">{<img className="featured" src={product} alt="Featured Products" width="50%" />}</div>
+      <div className="featured">{<img className="featured" src={product} alt="Featured Products" width="50%" />}</div>
+      <div className="featured">{<img className="featured" src={product} alt="Featured Products" width="50%" />}</div>
     </Carousel>
     </>
   );

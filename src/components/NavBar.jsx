@@ -13,7 +13,9 @@ import {
   DropdownItem,
   NavbarText
 } from 'reactstrap';
-import logo from "../img/admin/logo.png"
+
+
+
 
 const MainNav = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +25,7 @@ const MainNav = (props) => {
   return (
     <div>
       <Navbar className='nav' color="light" light expand="md">
-        <NavbarBrand href="/"> <img src={logo} alt="Mobo Fashion" width="80px" /> </NavbarBrand>
+        <NavbarBrand href="/"> </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -31,7 +33,10 @@ const MainNav = (props) => {
               <NavLink href="/components/">Return Policy</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">About us</NavLink>
+              <NavLink href="https://#">About us</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/components/">Become Agent</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>
@@ -51,7 +56,7 @@ const MainNav = (props) => {
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>
-          <NavbarText>Cart</NavbarText>
+          <NavbarText></NavbarText>
         </Collapse>
       </Navbar>
     </div>
