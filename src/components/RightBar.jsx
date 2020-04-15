@@ -10,7 +10,7 @@ class Right extends React.Component {
         return ( 
             <>
                 <div className="right">
-                    <AccountCircle color='orange' className='rightIcon' />
+                    <AccountCircle className='rightIcon' />
                     <div className="sideBtn">
                         <Button>SignUp</Button> <Button>Login</Button>
                     </div>

@@ -108,3 +108,7 @@ code {
   align-content: space-between;
   border-radius: 1.5%;
 }
+
+.tag {
+  position: absolute;
+}

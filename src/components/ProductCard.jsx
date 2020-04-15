@@ -3,7 +3,8 @@ import {
   Card, CardImg, CardText, CardBody,
   CardTitle, CardSubtitle, Button
 } from 'reactstrap';
-import product from "../img/products/top.jpg"
+import product from "../img/products/top.jpg";
+import Icon from '@material-ui/icons'
 
 const ProductCard = (props) => {
   return (
@@ -14,7 +15,8 @@ const ProductCard = (props) => {
           <CardTitle> {this.props.product.name} </CardTitle>
           <CardSubtitle>Price: $ {this.props.product.price} </CardSubtitle>
           <CardText> {this.props.product.description} </CardText>
-          <Button>Add to Cart</Button>
+          <Button>Add to Cart</Button> 
+          <Icon>WhatsApp</Icon>
         </CardBody>
       </Card>
     </div>

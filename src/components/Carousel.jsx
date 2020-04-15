@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import product from '../img/products/top.jpg'
+import Tag from "./TagBadge";
 
 
 const responsive = {
@@ -26,13 +27,17 @@ const responsive = {
 
 const Car = (props) => {
   return (
+    <>
+    <Tag className="tag"/>
     <Carousel className='featuredProduct' responsive={responsive}>
+      
       <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
       <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
       <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
       <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
       <div>{<img src={product} alt="Featured Products" width="50%" />}</div>
     </Carousel>
+    </>
   );
 };
 
