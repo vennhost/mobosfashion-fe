@@ -72,7 +72,7 @@ class Home extends React.Component {
        <Row className="logoContainer">
         <Col md="3"><img id="logo" src={logo} alt="Logo" width="150px" /></Col>
         <Col md="6"><SearchBar/></Col>
-        <Col md="3"><p className="cartSpace"><span className="cartIcon"><ShoppingCart/></span><span className="cartCount"><CartCount/></span></p></Col>
+        <Col md="3"><p className="cartSpace ml-5"><span className="cartIcon"><Cart/></span><span className="cartCount"><CartCount/></span></p></Col>
       </Row>
          
        

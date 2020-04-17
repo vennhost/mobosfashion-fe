@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
+/* import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart'; */
 
 import { ShoppingCart } from "@material-ui/icons";
 
