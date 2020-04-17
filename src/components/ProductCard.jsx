@@ -15,7 +15,7 @@ const ProductCard = (props) => {
         <CardBody>
           <CardTitle> {this.props.product.name} </CardTitle>
           <CardSubtitle>Price: $ {this.props.product.price} <a href="mobos.com"><WhatsAppIcon /></a></CardSubtitle>
-          <CardText> {this.props.product.description} </CardText>
+          <CardText> {this.props.product.description.substring(0, 5)} </CardText>
           <Button>Add to Cart</Button> 
           
         </CardBody>

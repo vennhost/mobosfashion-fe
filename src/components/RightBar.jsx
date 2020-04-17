@@ -9,10 +9,10 @@ class Right extends React.Component {
     render() { 
         return ( 
             <>
-                <div className="right">
-                    <AccountCircle className='rightIcon' />
-                    <div className="sideBtn">
-                        <Button>SignUp</Button> <Button>Login</Button>
+                <div className="right center">
+                    {/* <AccountCircle className='rightIcon center' /> */}
+                    <div className="sideBtn center">
+                        <Button className="sideButton">SignUp</Button> <Button className="sideButton">Login</Button>
                     </div>
                     <flashSales />
                 </div>
